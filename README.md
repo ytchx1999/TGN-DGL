@@ -6,9 +6,11 @@ This DGL examples implements the GNN mode proposed in the paper [Temporal GraphN
 
 DGL实现的原链接：[https://github.com/dmlc/dgl/tree/master/examples/pytorch/tgn](https://github.com/dmlc/dgl/tree/master/examples/pytorch/tgn)
 
-## TGN implementor
+官方实现的连接：[https://github.com/twitter-research/tgn](https://github.com/twitter-research/tgn)
 
-This example was implemented by [Ericcsr](https://github.com/Ericcsr) during his SDE internship at the AWS Shanghai AI Lab.
+<!-- ## TGN implementor
+
+This example was implemented by [Ericcsr](https://github.com/Ericcsr) during his SDE internship at the AWS Shanghai AI Lab. -->
 
 ## Graph Dataset
 
