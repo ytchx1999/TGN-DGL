@@ -14,6 +14,7 @@ from dataloading import (FastTemporalEdgeCollator, FastTemporalSampler,
                          TemporalEdgeDataLoader, TemporalSampler, TemporalEdgeCollator)
 
 from sklearn.metrics import average_precision_score, roc_auc_score
+from tqdm import tqdm
 
 
 TRAIN_SPLIT = 0.7
@@ -57,7 +58,7 @@ def test_val(model, dataloader, sampler, criterion, args):
     aps, aucs = [], []
     batch_cnt = 0
     with torch.no_grad():
-        for _, postive_pair_g, negative_pair_g, blocks in dataloader:
+        for _, postive_pair_g, negative_pair_g, blocks in tqdm(dataloader, desc='test'):
             pred_pos, pred_neg = model.embed(
                 postive_pair_g, negative_pair_g, blocks)
             loss = criterion(pred_pos, torch.ones_like(pred_pos))

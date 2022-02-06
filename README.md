@@ -12,6 +12,12 @@ DGL实现的原链接：[https://github.com/dmlc/dgl/tree/master/examples/pytorc
 
 This example was implemented by [Ericcsr](https://github.com/Ericcsr) during his SDE internship at the AWS Shanghai AI Lab. -->
 
+## Env
+```bash
+dgl-cu102 == 0.7.2
+torch == 1.7.0
+```
+
 ## Graph Dataset
 
 Jodie Wikipedia Temporal dataset. Dataset summary:
@@ -39,7 +45,7 @@ In tgn folder, run
 **please use `train.py`**
 
 ```python
-python train.py --dataset wikipedia
+python3 train.py --dataset wikipedia
 ```
 
 If you want to run in fast mode:
